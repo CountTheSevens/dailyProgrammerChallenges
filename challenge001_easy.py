@@ -13,7 +13,9 @@ redditName = input("What's your Reddit username? ")
 f = open('challenge001_easy_output.txt', 'a')
 
 print('Your name is', name, ', you\'re', age, 'years old, and your Reddit username is', redditName, '.')
-out = name,age,redditName
+out = {}
+out[name] = age, redditName
+
 printLine = str(out)
 
 
