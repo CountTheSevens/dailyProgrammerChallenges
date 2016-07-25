@@ -20,3 +20,7 @@ printLine = str(out)
 f.write(printLine)
 f.write('\n')
 f.close()
+
+# Ideas
+# 1. Check input format, e.g. age is an int
+# 2. Change out to a dictionary {name: age, redditName}
