@@ -4,25 +4,25 @@
 #your name is (blank), you are (blank) years old, and your username is (blank)
 #
 #for extra credit, have the program log this information in a file to be accessed later.
-#
-import csv
 
-name = input("What is you name? ")
+name = input("What is your name? ")
 age = input("How old are you? ")
+
+if age is not int:
+    input("Please enter a numeric value for your age. ")
+
 redditName = input("What's your Reddit username? ")
+
 f = open('challenge001_easy_output.txt', 'a')
 
-print('Your name is', name, ', you\'re', age, 'years old, and your Reddit username is', redditName, '.')
-out = {}
-out[name] = age, redditName
+print('Your name is', name,', you\'re', age, 'years old, and your Reddit username is', redditName, '.')
 
-printLine = str(out)
+out = name,age, redditName
 
 
-f.write(printLine)
+f.write(str(out))
 f.write('\n')
 f.close()
 
 # Ideas
 # 1. Check input format, e.g. age is an int
-# 2. Change out to a dictionary {name: age, redditName}
