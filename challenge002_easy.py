@@ -5,7 +5,7 @@
 # you might want to make a F = M * A calc.
 # EXTRA CREDIT: make the calculator have multiple functions! Not only should it be able to calculate F = M * A,
 # but also A = F/M, and M = F/A!
-
+# NOTE: Calculator does not check values, it is possible to pass strings - I won't fix because lazy.
 appTitle = 'PHYSICS CALCULATOR'
 
 import math
@@ -15,7 +15,7 @@ def acceleration():
     m = input('What is your MASS value? ')
     a = float(f) / float(m)
     print('Your ACCELERATION value is',a)
-    
+
 
 def force():
      m = input('What is your MASS value? ')
